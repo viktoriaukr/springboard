@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Meme Generator</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8w5AYSmsfZG5Kh-Sm4ZmWXDYYNbNYQdqXvuTmBpc2jMrMhZYOcIEOqYtVWUtfsBXB5C4&usqp=CAU"
+    />
+  </head>
+  <body>
+    <section class="first-section">
+      <h1>Meme Generator</h1>
+      <p>You can generate your own meme with our form down below.</p>
+      <form id="input-form">
+        <label for="meme-link">Image URL:</label>
+        <input
+          type="url"
+          name="meme-link"
+          id="meme-link"
+          placeholder="Enter image URL here..."
+        />
+        <label for="top-input">Text On Top:</label>
+        <input
+          type="text"
+          name="top-input"
+          id="top-input"
+          placeholder="You can add the text to the top section of your meme here.."
+        />
+        <label for="bottom-input">Text On Bottom:</label>
+        <input
+          type="text"
+          name="bottom-input"
+          id="bottom-input"
+          placeholder="You can add the text to the bottom section of your meme here..."
+        />
+        <input type="submit" name="Submit" id="submit-button" />
+      </form>
+    </section>
+    <section id="second-section"></section>
+    <script src="app.js"></script>
+  </body>
+</html>
